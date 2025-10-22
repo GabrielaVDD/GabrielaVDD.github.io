@@ -131,7 +131,7 @@ html {
 	text-align: center;
 	color: #444;
 	font-size: 1.1em;
-	margin: 0 auto 24px auto;
+	margin: 0 auto 30px auto;
 	max-width: 700px;
 }
 .portfolio-filters {
@@ -205,6 +205,7 @@ html {
 .skills-heading {
 	color: #846fc3;
 	font-size: 1.3em;
+    margin-top: 70px;
 	margin-bottom: 24px;
 	font-weight: 700;
 	letter-spacing: 1px;
