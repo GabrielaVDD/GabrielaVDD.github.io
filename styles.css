@@ -1,3 +1,122 @@
+/* Footer styles */
+.site-footer {
+	background: #d1cbe9;
+	text-align: center;
+	padding: 28px 0 16px 0;
+	font-size: 0.8em;
+	color: #23272a;
+	margin-top: 40px;
+}
+.footer-main {
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+.footer-designer {
+	font-size: 0.98em;
+	color: #5a4e7c;
+	letter-spacing: 0.5px;
+}
+.rating-group {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.rating-group input[type="radio"] {
+	display: none;
+}
+.rating-group label {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 50%;
+	background: #edeaf7;
+	color: #846fc3;
+	font-weight: 600;
+	font-size: 1em;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: background 0.18s, color 0.18s, border 0.18s;
+}
+.rating-group input[type="radio"]:checked + label {
+	background: #846fc3;
+	color: #fff;
+	border: 2px solid #846fc3;
+}
+.rating-group label:hover {
+	background: #d1cbe9;
+	color: #23272a;
+}
+.contact-heading {
+	text-align: center;
+	color: #23272a;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+/* Contact form styles */
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto;
+	background: #faf9fd;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(132,111,195,0.07);
+	padding: 32px 24px 24px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.form-row {
+	display: flex;
+	gap: 24px;
+}
+.form-group {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.contact-form label {
+	font-weight: 600;
+	color: #23272a;
+	margin-bottom: 2px;
+}
+.contact-form input,
+.contact-form select {
+	padding: 8px 10px;
+	border: 1.5px solid #d1cbe9;
+	border-radius: 6px;
+	font-size: 1em;
+	font-family: inherit;
+	background: #fff;
+	color: #23272a;
+	transition: border 0.18s;
+}
+.contact-form input:focus,
+.contact-form select:focus {
+	border-color: #846fc3;
+	outline: none;
+}
+.rating-row {
+	display: flex;
+	gap: 12px;
+    align-self: center;
+}
+.contact-submit {
+	margin-top: 12px;
+	padding: 10px 0;
+	background: #846fc3;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1em;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background 0.18s;
+}
+.contact-submit:hover {
+	background: #6d59b3;
+}
 html {
 	scroll-padding-top: 100px;
 }
