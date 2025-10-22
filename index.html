@@ -5,85 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <metaname="author" content="Student Name">
-    <meta name="Student name and surname CV puslapis" content="Personal website">
-    <title>Mano CV</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="Student name and surname CV page" content="Personal website">
+    <title>My CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Vardenis Pavardenis</h1>
-    <h5>Studijų programa</h5>
 
-    <div>
-    <u><p>Pastraipa su bet kokios temos tekstu.</p></u>
-    <a href="https://www.w3schools.com/html/">Nuoroda į išorinį puslapį</a>
-    <img src="images/science.png" alt="Data scientist image" width="250" height="250">
-    </div>
 
-    <ul>
-        <em><li>Punktas 1</li></em>
-        <i><li>Punktas 2</li></i>
-        <li>Punktas 3</li>
-    </ul>
+    <header class="main-header">
+        <div class="header-name">Vardenis Pavardenis</div>
+        <nav class="header-nav">
+            <a href="#about">Apie</a>
+            <a href="#resume">Reziumė</a>
+            <a href="#portfolio">Atlikti darbai</a>
+            <a href="#contact">Kontaktai</a>
+        </nav>
+    </header>
 
-        <!-- 
-    <em> – semantinė žymė, pabrėžianti žodžio ar frazės svarbą (emphasis).
-    Tekstas paprastai rodomas pasviru šriftu, bet svarbiau tai, kad ji perteikia prasmę (intonaciją).
-    -->
-        <!-- 
-    <i> – vizualinė žymė, tiesiog pasvirina tekstą be semantinės reikšmės.
-    Ji naudojama, pvz., svetimžodžiams ar terminams, bet ne pabrėžimui.
-    -->
+    <section class="profile-section">
+        <div class="profile-bg-svg">
+            <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="none" class="numbers-bg-svg">
+                <text x="10%" y="20%" class="math-number" style="--i:0;">π</text>
+                <text x="80%" y="30%" class="math-number" style="--i:1;">Σ</text>
+                <text x="50%" y="80%" class="math-number" style="--i:2;">∞</text>
+                <text x="30%" y="60%" class="math-number" style="--i:3;">e</text>
+                <text x="70%" y="70%" class="math-number" style="--i:4;">λ</text>
+                <text x="60%" y="15%" class="math-number" style="--i:5;">φ</text>
+            </svg>
+        </div>
+        <img src="images/science.png" alt="Profile Photo" class="profile-photo">
+        <h1 class="profile-name">Vardenis Pavardenis</h1>
+        <div class="profile-title">Duomenų mokslininkas</div>
+        <div class="profile-socials">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23272a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .267.18.577.688.479C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23272a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#23272a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            </a>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <hr class="section-divider">
 
-    <ol>
-        <strong><li>Žingsnis 1</li></strong>
-        <b><li>Žingsnis 2</li></b>
-        <li>Žingsnis 3</li>
-        <li>Something else</li>
+    <section id="about" class="main-section">
+        <h2 class="about-heading">Sveiki!</h2>
+        <p class="about-paragraph">
+            Kaip aistringas duomenų mokslininkas, man patinka neapdorotus duomenis paversti į praktines įžvalgas. Mano patirtis apima statistinę analizę, mašininį mokymąsi ir duomenų vizualizaciją. Man patinka spręsti sudėtingas problemas, automatizuoti procesus ir aiškiai bei įtaigiai perteikti rezultatus. Mano tikslas – panaudoti duomenis inovacijoms skatinti ir įrodymais pagrįstam sprendimų priėmimui paremti.        </p>
+    </section>
+    <hr class="section-divider">
 
-            <!-- 
-    <strong> – semantinė žymė. Ji nurodo, kad tekstas yra svarbus (pabrėžia reikšmę, ne tik vizualiai paryškina).
-    Naršyklėje dažniausiai rodoma paryškintu šriftu, bet svarbiausia – semantinė reikšmė.
-    -->
-    <!-- <b> – vizualinio paryškinimo žymė. Ji tik pakeičia išvaizdą (padaro tekstą storu šriftu),
-    bet nenurodo semantinės svarbos. <strong> yra semantiškai tinkamesnė reikšmingam tekstui.
-    -->
+    <!-- Sections for scrolling -->
+    <section id="resume" class="main-section">
+        <h2 class="resume-heading">Reziumė</h2>
+        <p class="resume-intro">Below you will find a summary of my academic background and professional journey.</p>
+        <div class="resume-columns">
+            <div class="resume-col resume-education">
+                <h3>Academic Background</h3>
+                <div class="timeline no-line">
+                    <div class="timeline-item">
+                        <span class="timeline-marker">
+                            <!-- Graduation cap SVG -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#846fc3" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 8.5l10 5.5 10-5.5L12 3zm0 13.5c-3.5 0-6.5-1.5-6.5-3.5V10l6.5 3.5L19 10v3c0 2-3 3.5-7 3.5z"/></svg>
+                        </span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022–2024</span>
+                            <span class="timeline-title">MSc in Data Science</span>
+                            <span class="timeline-place">Vilniaus Gedimino Technikos Universitetas</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-marker">
+                            <!-- Graduation cap SVG -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#846fc3" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 8.5l10 5.5 10-5.5L12 3zm0 13.5c-3.5 0-6.5-1.5-6.5-3.5V10l6.5 3.5L19 10v3c0 2-3 3.5-7 3.5z"/></svg>
+                        </span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018–2022</span>
+                            <span class="timeline-title">BSc in Applied Mathematics</span>
+                            <span class="timeline-place">Vilniaus Gedimino Technikos Universitetas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-col resume-experience">
+                <h3>Professional Journey</h3>
+                <div class="timeline no-line">
+                    <div class="timeline-item">
+                        <span class="timeline-marker">
+                            <!-- Briefcase SVG -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#846fc3" xmlns="http://www.w3.org/2000/svg"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 4V4h4v2h-4z"/></svg>
+                        </span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024–Present</span>
+                            <span class="timeline-title">Data Scientist</span>
+                            <span class="timeline-place">Tech Innovations Ltd.</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-marker">
+                            <!-- Briefcase SVG -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="#846fc3" xmlns="http://www.w3.org/2000/svg"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 4V4h4v2h-4z"/></svg>
+                        </span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022–2024</span>
+                            <span class="timeline-title">Junior Data Analyst</span>
+                            <span class="timeline-place">Data Insights UAB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-skills">
+            <h3 class="skills-heading">Key Skills</h3>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#846fc3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M2 11h20"/></svg>
+                    <span>Data Analysis</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#846fc3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#846fc3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    <span>Data Visualization</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#846fc3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Teamwork</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider">
 
-    </ol>
+    <section id="portfolio" class="main-section">
+        <h2 class="portfolio-heading">Portfolio</h2>
+        <p class="portfolio-intro">Below you can find a selection of my completed works. Use the filters to view projects by topic.</p>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="da">Data Analysis</button>
+            <button class="filter-btn" data-filter="viz">Visualization</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item" data-topic="ml">
+                <img src="images/ML_1.jpg" alt="Project 1">
+                <div class="portfolio-caption">ML Project 1</div>
+            </div>
+            <div class="portfolio-item" data-topic="ml">
+                <img src="images/ML_2.jpg" alt="Project 2">
+                <div class="portfolio-caption">ML Project 2</div>
+            </div>
+            <div class="portfolio-item" data-topic="da">
+                <img src="images/DA_1.jpg" alt="Project 3">
+                <div class="portfolio-caption">Data Analysis 1</div>
+            </div>
+            <div class="portfolio-item" data-topic="viz">
+                <img src="images/DA_2.jpg" alt="Project 4">
+                <div class="portfolio-caption">Visualization 1</div>
+            </div>
+            <div class="portfolio-item" data-topic="da">
+                <img src="images/visualization.png" alt="Project 5">
+                <div class="portfolio-caption">Data Analysis 2</div>
+            </div>
+            <div class="portfolio-item" data-topic="other">
+                <img src="images/other.jpg" alt="Project 6">
+                <div class="portfolio-caption">Other Project</div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider">
+
+    <section id="contact" class="main-section"><h2>Contact</h2><p>Contact section content...</p></section>
 
 </body>
 </html>
-
-
-
-
-
-<!-- for emmet template use: !+tab -->
-<!-- 
-<!DOCTYPE html> nurodo naršyklei, kad dokumentas parašytas HTML5 standartu.
-Tai padeda naršyklei teisingai interpretuoti HTML kodą.
--->
-
-<!-- 
-<html> – tai pagrindinė (šakninė) HTML dokumento žymė. 
-Ji apgaubia visą puslapio turinį (tiek <head>, tiek <body> dalis).
-Atributas lang="lt" nurodo puslapio kalbą (lietuvių).
--->
-
-<!-- 
-<head> – ši dalis apima dokumento meta informaciją: pavadinimą, koduotę, stilius, skriptus ir kt.
-Turinys čia nėra tiesiogiai rodomas puslapyje.
--->
-
-<!-- 
-<meta> – meta duomenų žymė. Ši nurodo simbolių koduotę (UTF-8),
-kad lietuviškos raidės būtų rodomos teisingai.
--->
-
-<!-- 
-    <title> – nurodo puslapio pavadinimą, kuris matomas naršyklės skirtuke.
-    -->
-<!-- 
-<body> – tai matoma puslapio dalis.
-Visas turinys, kurį vartotojas mato naršyklėje (tekstai, paveikslėliai, nuorodos ir pan.),
-rašo čia.
--->
